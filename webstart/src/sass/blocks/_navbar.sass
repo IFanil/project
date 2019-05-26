@@ -16,6 +16,7 @@
     &__button
         margin-left: 30px
         font-weight: bold
+        font-size: 13px
     &__phone
         display: inline-block
         color: $text-color
@@ -32,3 +33,14 @@
             padding: 15px 26px
         &__logo
             width: 90px
+@media (max-width: 567px)
+    .navbar
+        &__contacts
+            display: none
+        &__button
+            font-size: 10px
+            padding: 15px 26px
+            margin: 5px 14px auto auto
+        &__logo
+            width: 90px
+            margin: 8px auto auto 13px
