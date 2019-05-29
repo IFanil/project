@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  color: #333333;
 }
 
 img {
@@ -131,7 +132,7 @@ img {
 
 .hero-text__title {
   font-size: 41px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 55px;
   margin-bottom: 40px;
 }
@@ -139,7 +140,7 @@ img {
 .hero-text__subtitle {
   display: inline-block;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 70px;
 }
 
