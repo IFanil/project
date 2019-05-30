@@ -61,7 +61,7 @@ img {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 13px 0;
 }
 
 .section-title {
@@ -77,7 +77,7 @@ img {
 
 .input {
   border: 1px solid #ddd;
-  padding: 20px 26px;
+  padding: 22px 25px;
   font-size: 15px;
   border-radius: 10px;
 }
@@ -166,7 +166,7 @@ img {
 }
 
 .hero {
-  padding: 46px 0;
+  padding: 46px 0 3px 0;
   background-color: #f5f5f5;
 }
 
@@ -179,8 +179,8 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 51px;
   padding-top: 4px;
+  margin-right: 50px;
 }
 
 .hero-text__title {
@@ -196,7 +196,7 @@ img {
   font-size: 20px;
   font-family: 'Museo Sans Bold', serif;
   font-weight: 700;
-  margin-bottom: 67px;
+  margin-bottom: 70px;
 }
 
 .hero-list {
@@ -211,11 +211,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 23px;
-  margin-left: -2px;
+  margin-bottom: 25px;
 }
 
 .hero-list__item:last-child {
+  margin-top: -3px;
   margin-bottom: 0;
 }
 
@@ -233,7 +233,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  margin-right: 28px;
+  margin-right: 31px;
 }
 
 .hero-list__text {
@@ -243,7 +243,7 @@ img {
 }
 
 .hero-image {
-  max-width: 107%;
+  max-width: 108%;
 }
 
 @media (max-width: 1200px) {
@@ -283,9 +283,10 @@ img {
 }
 
 .offer {
-  background: url("/src/img/offer/offer_bg.png") no-repeat;
+  background: url("../img/offer/offer_bg.png") no-repeat;
   background-position: center right;
   background-size: contain;
+  background-position-x: 834px;
   position: relative;
 }
 
@@ -303,17 +304,18 @@ img {
   width: 50%;
   padding-right: 90px;
   position: relative;
+  padding-top: 43px;
 }
 
 .offer__title {
   max-width: 360px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 }
 
 .offer__subtitle {
   max-width: 250px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .offer__input {
@@ -325,9 +327,45 @@ img {
   margin-right: 10px;
 }
 
+.offer__input:focus {
+  border: 1px solid #FFD800;
+  outline: none;
+}
+
 .offer__button {
   width: 100%;
   min-height: 70px;
+  font-size: 16px;
+  font-family: 'Museo Sans Bold', serif;
+  font-weight: 700;
+}
+
+.offer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 72px;
+}
+
+.offer-text__text_we-call {
+  font-size: 15px;
+  line-height: 24px;
+  width: 230px;
+}
+
+.offer-text__text_you-call {
+  font-size: 15px;
+  line-height: 24px;
+  width: 200px;
+}
+
+.offer-text__text_you-call__phone {
+  font-family: 'Museo Sans Bold', serif;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
