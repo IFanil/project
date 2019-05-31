@@ -125,6 +125,7 @@ img {
   font-family: 'Museo Sans Bold', serif;
   font-weight: 700;
   font-size: 13px;
+  outline: none;
 }
 
 .navbar__phone {
@@ -286,7 +287,6 @@ img {
   background: url("../img/offer/offer_bg.png") no-repeat;
   background-position: center right;
   background-size: contain;
-  background-position-x: 834px;
   position: relative;
 }
 
@@ -415,6 +415,10 @@ img {
   min-height: 200px;
   background-color: #fff;
   padding: 40px;
+}
+
+.modal-dialog__title {
+  text-align: center;
 }
 
 .modal-dialog__close {
