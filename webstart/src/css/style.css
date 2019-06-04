@@ -17,6 +17,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -329,8 +330,12 @@ img {
   width: 240px;
 }
 
-.offer__input:first-child {
+.offer__input:nth-child(1) {
   margin-right: 10px;
+}
+
+.offer__input:nth-child(2) {
+  padding-left: 32px;
 }
 
 .offer__input:focus {
@@ -357,19 +362,20 @@ img {
   margin-bottom: 72px;
 }
 
-.offer-text__text_we-call {
+.offer-text > span:nth-child(1), .offer-text > span:nth-child(2) {
   font-size: 15px;
   line-height: 24px;
+}
+
+.offer-text > span:nth-child(1) {
   width: 230px;
 }
 
-.offer-text__text_you-call {
-  font-size: 15px;
-  line-height: 24px;
+.offer-text > span:nth-child(2) {
   width: 200px;
 }
 
-.offer-text__text_you-call__phone {
+.offer-text > span:nth-child(2) > span {
   font-family: 'Museo Sans Bold', serif;
   font-weight: 700;
 }
@@ -430,6 +436,216 @@ img {
 @media (max-width: 768px) {
   .portfolio {
     background: #f5f5f5;
+    padding: 45px 0;
+  }
+  .portfolio__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio__title {
+    font-size: 18px;
+    line-height: normal;
+  }
+}
+
+.price__title {
+  margin: auto;
+  margin-bottom: 58px;
+  max-width: 515px;
+}
+
+.price__subtitle {
+  margin-bottom: 59px;
+  text-align: center;
+}
+
+.price__card {
+  margin-bottom: 30px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card:hover .card__image::before {
+  opacity: 1;
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__text {
+  padding: 40px;
+}
+
+.card__image {
+  position: relative;
+  display: block;
+}
+
+.card__image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card__link {
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Museo Sans Bold', serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333333;
+  position: relative;
+}
+
+.card__link:hover:after {
+  height: 12px;
+}
+
+.card__link:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: -4px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.step {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+  position: relative;
+}
+
+.step:after {
+  content: '';
+  width: 72px;
+  height: 25px;
+  position: absolute;
+  background: url("../img/steps/arrow_circle.png") no-repeat center;
+  top: -10px;
+  right: -15%;
+}
+
+.step:last-child:after {
+  display: none;
+}
+
+.step__image {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #ffd200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.step__text {
+  font-size: 14px;
+  max-width: 160px;
+  margin: auto;
+}
+
+.steps__title {
+  margin: auto;
+  margin-bottom: 59px;
+}
+
+.steps__subtitle {
+  text-align: center;
+  margin-bottom: 58px;
+}
+
+.steps-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .step {
+    margin-bottom: 30px;
+  }
+  .step:after {
+    display: none;
+  }
+  .steps-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .step {
+    margin-bottom: 30px;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+  .step:after {
+    display: none;
+  }
+  .steps-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -482,10 +698,21 @@ img {
   font-family: 'Museo Sans Bold', serif;
   font-weight: 700;
   text-decoration: none;
+  color: #333333;
 }
 
-.top_arrow:hover {
+.top_arrow:hover, .top_arrow:visited, .top_arrow:active {
   cursor: pointer;
   text-decoration: none;
+  color: #333333;
+}
+
+@media (max-width: 600px) {
+  .top_arrow {
+    background: url("../img/top_arrow_small.png") no-repeat;
+    width: 25px;
+    height: 20px;
+    font-size: 11px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,14 @@
     background: url('../img/top_arrow.png') no-repeat
     +bold
     text-decoration: none
-    &:hover
+    color: $text-color
+    &:hover, &:visited, &:active
         cursor: pointer
         text-decoration: none
+        color: $text-color
+@media (max-width: 600px)
+    .top_arrow
+        background: url('../img/top_arrow_small.png') no-repeat
+        width: 25px
+        height: 20px
+        font-size: 11px
