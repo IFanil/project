@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(53970355, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/53970355" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    <!-- Yandex.Metrika counter --> 
+    <!-- <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(53970355, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/53970355" style="position:absolute; left:-9999px;" alt="" /></div></noscript>  -->
+    <!-- /Yandex.Metrika counter -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=828a06d9-2985-40a9-aaa3-101fe9552675&lang=ru_RU" type="text/javascript"></script>
     <title>Внутренняя отделка помещений "под ключ"</title>
 </head>
 
@@ -356,9 +359,14 @@
         <!-- /.section brif -->
     </main>
     <footer class="footer">
-        <div class="map" id="map">
+        <div id="map" class="map" style="height: 552px"></div>
+        
+        
+        
+        
+        <!-- <div class="map" id="map">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A637ff935f69dfc17ae711367ace84afaa4eca8d1d1816a56c1912b1d3a3e72b2&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
-        </div>
+        </div> -->
         <div class="container">
             <div class="contacts-block">
                 <div class="contacts">
@@ -489,6 +497,25 @@
                 ]
             });
         });
+    </script>
+    <!-- Это скрипт подключения Яндекс.Карт через API -->
+    <script type="text/javascript">
+        // Функция ymaps.ready() будет вызвана, когда
+        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+        ymaps.ready(init);
+        function init(){ 
+            // Создание карты.    
+            var myMap = new ymaps.Map("map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [55.63603607, 37.25810250],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 16
+            });
+        }
     </script>
 </body>
 
