@@ -30,8 +30,8 @@
                 margin-top: -3px
                 margin-bottom: 0
         &__image
-            width: 40px
-            height: 40px
+            min-width: 40px
+            min-height: 40px
             border: 2px solid $main-color
             display: flex
             align-items: center
@@ -42,9 +42,6 @@
             max-width: 276px
             font-size: 14px
             line-height: 24px
-
-    &-image
-        max-width: 108% 
 @media (max-width: 1200px)
     .hero
         &-block
@@ -53,6 +50,10 @@
             margin-bottom: 44px
         &-text
             margin-right: 10px
+@media (min-width: 1200px)
+    .hero
+        &-image
+            max-width: 108%
 @media (max-width: 768px)
     .hero
         &-text

@@ -1,23 +1,27 @@
 .top_arrow
     padding-top: 35px
-    width: 40px
+    width: 50px
     height: 35px
     position: fixed
     bottom: 30px
     right: 50px
     z-index: 999
     opacity: 0.7
-    background: url('../img/top_arrow.png') no-repeat
+    background: url('../img/top_arrow.png') no-repeat top center
     +bold
     text-decoration: none
     color: $text-color
-    &:hover, &:visited, &:active
-        cursor: pointer
-        text-decoration: none
-        color: $text-color
 @media (max-width: 600px)
     .top_arrow
-        background: url('../img/top_arrow_small.png') no-repeat
-        width: 25px
+        background: url('../img/top_arrow_small.png') no-repeat top center
+        width: 35px
         height: 20px
+        padding-top: 20px
+        right: 30px
         font-size: 11px
+@media (min-width: 992px)
+    .top_arrow
+        &:hover, &:visited, &:active
+            cursor: pointer
+            text-decoration: none
+            color: $text-color
