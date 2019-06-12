@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Внутренняя отделка помещений "под ключ"</title>
-</head>
-<body>
     <!-- Yandex.Metrika counter --> 
     <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(53970355, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/53970355" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=828a06d9-2985-40a9-aaa3-101fe9552675&lang=ru_RU" type="text/javascript"></script>
+    <title>Внутренняя отделка помещений "под ключ"</title>
+</head>
+
+<body>
     <nav class="navbar">
         <div class="container">
             <div class="navbar-block">
                 <div class="navbar__logo wow flipOutY" data-wow-delay="3s" data-wow-offset="5">
-                    <img src="img/logo.jpg" alt="logo">
+                    <img src="img/logo.png" alt="logo">
                 </div>
                 <!-- /.navbar__logo -->
                 <div class="navbar__info">
@@ -25,7 +31,8 @@
                         <!-- /.navbar__phone -->
                     </div>
                     <!-- /.navbar__contacts -->
-                    <button class="button navbar__button wow shake" id="button" onclick="ym(53970355, 'reachGoal', 'button'); return true;" data-wow-delay="8s">Перезвоните мне</button>
+                    <button class="button navbar__button wow shake" id="button" onclick="ym(53970355, 'reachGoal', 'button'); return true;" data-wow-delay="8s">Перезвоните
+                        мне</button>
                     <!-- /.button navbar__button -->
                 </div>
                 <!-- /.navbar__info -->
@@ -49,14 +56,14 @@
                                 <div class="hero-list__image">
                                     <img src="img/hero/clock-1.png" alt="clock">
                                 </div>
-                                <span class="hero-list__text wow heartBeat" data-wow-delay="5s"> Точно соблюдаем
+                                <span class="hero-list__text wow flash" data-wow-delay="5s"> Точно соблюдаем
                                     сроки</span>
                             </li>
                             <li class="hero-list__item">
                                 <div class="hero-list__image">
                                     <img src="img/hero/calculator-1.png" alt="calculator">
                                 </div>
-                                <span class="hero-list__text wow heartBeat" data-wow-delay="6s">Рассчитаем смету на работы
+                                <span class="hero-list__text wow flash" data-wow-delay="6s">Рассчитаем смету на работы
                                     <br>и материалы в день
                                     обращения</span>
                             </li>
@@ -64,7 +71,7 @@
                                 <div class="hero-list__image">
                                     <img src="img/hero/paint-board-1.png" alt="paint-board">
                                 </div>
-                                <span class="hero-list__text wow heartBeat" data-wow-delay="7s">Предложим более 100
+                                <span class="hero-list__text wow flash" data-wow-delay="7s">Предложим более 100
                                     вариантов исполнения дизайна Вашего
                                     жилья</span>
                             </li>
@@ -158,7 +165,7 @@
                 <!-- /.section-subtitle price__subtitle -->
                 <div class="cards">
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="card__image"><img src="img/price/bathroom.jpg" alt=""></div>
+                        <div class="card__image"><img src="img/price/bathroom.png" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
@@ -170,7 +177,7 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="card__image"><img src="img/price/livingroom.jpg" alt=""></div>
+                        <div class="card__image"><img src="img/price/livingroom.png" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт комнат и квартир</h4>
@@ -182,7 +189,7 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="card__image"><img src="img/price/office.jpg" alt=""></div>
+                        <div class="card__image"><img src="img/price/office.png" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Отделка офисных помещений</h4>
@@ -194,7 +201,7 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="card__image"><img src="img/price/buildings.jpg" alt=""></div>
+                        <div class="card__image"><img src="img/price/buildings.png" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт в новостройках</h4>
@@ -206,7 +213,7 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="card__image"><img src="img/price/kitchen.jpg" alt=""></div>
+                        <div class="card__image"><img src="img/price/kitchen.png" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт кухонь</h4>
@@ -218,7 +225,7 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="1.1s">
-                        <div class="card__image"><img src="img/price/houses.jpg" alt=""></div>
+                        <div class="card__image"><img src="img/price/houses.png" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт дач и коттеджей</h4>
@@ -337,7 +344,7 @@
                         </span>
                         <form action="#" id="brif-form">
                             <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
-                            <input type="email" name="email" class="input brif__input email" placeholder="Ваш email">
+                            <!-- <input type="email" name="email" class="input brif__input email" placeholder="Ваш email"> -->
                             <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
                             <button class="button brif__button">Рассчитать стоимость</button>
                             <span class="form__description">Мы перезвоним в течении 60 секунд</span>
@@ -352,9 +359,7 @@
         <!-- /.section brif -->
     </main>
     <footer class="footer">
-        <div class="map" id="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A637ff935f69dfc17ae711367ace84afaa4eca8d1d1816a56c1912b1d3a3e72b2&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
-        </div>
+        <div id="map" class="map" style="height: 640px"></div>
         <div class="container">
             <div class="contacts-block">
                 <div class="contacts">
@@ -392,18 +397,136 @@
     </div>
     <div><a href="#" class="top_arrow">Наверх</a></div>
     <!-- /.modal -->
+    <!-- <script src="js/main.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="js/modal.js"></script>
     <script src="js/top.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-            /* Здесь - это инициализация WOW.js*/
-            new WOW().init();
-        </script>
     <script src="js/slick.min.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/forms_validation.js"></script>
+    <script>
+        /* Здесь - это инициализация WOW.js*/
+        new WOW().init();
+        /* Валидация формы*/ 
+        $('#brif-form').validate({
+            errorClass: "invalid",
+            errorElement: "div",
+            rules: {
+                username: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 15
+                },
+                phone: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                username: {
+                    required: "Заполните поле",
+                    minlength: jQuery.validator.format("Осталось символов: {0}")
+                },
+                phone: {
+                    required: "Заполните поле"
+                },
+                email: {
+                    required: "Введите корректный email",
+                    email: "Введите корректный email"
+                }
+            }
+        });
+        $('#offer-form').validate({
+            errorClass: "invalid",
+            errorElement: "div",
+            rules: {
+                username: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 15
+                },
+                phone: {
+                    required: true
+                },
+            },
+            messages: {
+                username: {
+                    required: "Заполните поле",
+                    minlength: jQuery.validator.format("Осталось символов: {0}")
+                },
+                phone: {
+                    required: "Заполните поле"
+                },
+            }
+        });
+        /* Маска для телефона*/ 
+        $('.phone').mask('8 (999) 999-99-99');
+
+        /* Это скрипт слайдера карточек*/
+        $(document).ready(function () {
+            $('.slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: $('.arrows__left'),
+                nextArrow: $('.arrows__right'),
+                responsive: [{
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <!-- Это скрипт подключения Яндекс.Карт через API -->
+    <script type="text/javascript">
+        // Функция ymaps.ready() будет вызвана, когда
+        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+        ymaps.ready(init);
+        function init(){ 
+            // Создание карты.    
+            var myMap = new ymaps.Map("map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [55.63603607, 37.25810250],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 18
+            }),
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'ул. Ленинга, д. 10, корпус 2',
+            balloonContent: 'Наш офис'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/footer/myIcon.gif',
+            // Размеры метки.
+            iconImageSize: [30, 42],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -38]
+        });
+        myMap.geoObjects
+        .add(myPlacemark);
+        }
+    </script>
 </body>
+
 </html>
